@@ -1,0 +1,12 @@
+let totalDistance = Number(prompt('distance traveled in km'));
+let costKilometer = Number(prompt('what is the cost per kilometer?'));
+let numberPeople = Number(prompt('number of poeple travelled?'));
+
+function taxiFare(distance, cost, people) {
+    let totalFare = (distance * cost);
+    let fare = (totalFare / people);
+
+    return `each should pay $ ${fare}`;
+}
+
+alert(taxiFare(totalDistance, costKilometer, numberPeople));
