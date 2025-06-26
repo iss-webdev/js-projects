@@ -1,0 +1,7 @@
+
+let people = 10; 
+let cost = 1000;
+
+let bill = cost / people;
+
+console.log(`the bill for 1 person is ${bill}`);
