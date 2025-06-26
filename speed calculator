@@ -1,0 +1,6 @@
+let distance = 325;
+let time = 4;
+
+let speed = distance / time;
+
+console.log(`you covered ${distance}km in ${time}hours, so your speed is ${speed}`);
