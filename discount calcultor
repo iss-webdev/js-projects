@@ -1,0 +1,11 @@
+let originalPrice = Number(prompt('what is the original price of an item?'));
+let discountPercent = Number(prompt('what is the discount percentage?'));
+
+function calculate(price, discount) {
+    let discountAmount = ((discount / 100) * price);
+    let finalPrice = (price - discountAmount);
+
+    return `the final price after discount is $ ${finalPrice}`;
+}
+
+alert(calculate(originalPrice, discountPercent));
