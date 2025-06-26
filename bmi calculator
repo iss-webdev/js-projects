@@ -1,0 +1,23 @@
+let weight = Number(prompt('what is your weight?'));
+let height = Number(prompt('what is your height? '));
+
+let bmi = weight / (height * height); 
+
+console.log(bmi);
+
+function calculate() {
+    if (bmi <= 0) {
+        return "give correct weight and height";
+    }
+    if (bmi < 18.5) {
+        return "underweight";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        return "normal";
+    } if (bmi >= 25 && bmi <= 29.9) {
+        return "overweight";
+    } else { 
+        return "obese";
+    }
+}
+
+alert(calculate(bmi));
