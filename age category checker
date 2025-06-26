@@ -1,0 +1,13 @@
+function check(age) {
+    if (age <= 13) {
+        alert("you're a kid");
+    } else if (age > 13 && age < 19) {
+        alert("you're a teenager");
+    } else {
+        alert("you're an adult");
+    }
+}
+
+alert(check(22));
+
+//function + conditionals
