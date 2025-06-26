@@ -1,0 +1,12 @@
+let countriesVisited = Number(prompt('Number of countries visited?'));
+let countryCost = Number(prompt('Cost per country'));
+let noPeople = Number(prompt('Number of people traveling'));
+
+function calculate(visit, cost, people) {
+    let totalCost = visit * cost;
+    let costPerson = totalCost / people;
+
+    return `total trip cost $ ${totalCost}. each person pays $ ${costPerson}`;
+}
+
+alert(calculate(countriesVisited, countryCost, noPeople));
