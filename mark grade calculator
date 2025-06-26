@@ -1,0 +1,20 @@
+let mark = Number(prompt('whats your mark? '));
+
+function markCalculator(didi){
+    if (didi > 100){
+        return "Enter mark for 100";
+    }
+    if (didi >= 90 && didi <= 100){
+        return "A";
+    } else if (didi >= 80 && didi <= 89){
+        return "B";
+    } else if (didi >= 70 && didi <= 79){
+        return "C";
+    } else if (didi >= 60 && didi <= 69){
+        return "D";
+    } else {
+        return "F";
+    }
+}
+
+alert(markCalculator(mark));
